@@ -1,1 +1,1 @@
-<img src="Media/Altair Manual Part 1 notes.pdf" alt="notes">
+<img src="Media/Altair Manual Part 1 notes.png" alt="notes">
