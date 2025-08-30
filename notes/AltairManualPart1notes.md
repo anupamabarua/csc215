@@ -1,1 +1,1 @@
-![notes](Media/AltairManualPart1notes.png "notes")
+![notes](/Media/AltairManualPart1notes.png "notes")
