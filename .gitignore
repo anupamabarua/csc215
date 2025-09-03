@@ -22,3 +22,5 @@
     [...]
     #       Documentation/foo.html
     [...]
+
+echo .DS_Store >> .gitignore
