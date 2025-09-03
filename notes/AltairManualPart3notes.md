@@ -7,7 +7,7 @@
 
 - Basic ALTAIR 8800 can be preformed with only 15 switches and by monitoring only 16 led lights
 
-1. Front panel switches
+### 1. Front panel switches
 
 ON-OFF Switch
 - ON postion gives power to the computer
@@ -41,7 +41,7 @@ AUX Switches
 DATA/ADDRESS Switches
 - up means a 1 bit, down means a 0 bit
 
-2. Indicator lights
+### 2. Indicator lights
 
 ADDRESS: A15-A0
 -  LEDs denotes the memory address being examined or loaded with data
@@ -61,7 +61,7 @@ WAIT
 HLDA
 - HOLD ACKNOWLAGED led is glowing
 
-3. Staus LEDs
+### 3. Staus LEDs
 MEMR
 - memory bus used to read memory data
 
@@ -85,16 +85,4 @@ WO
 
 INT
 -  an interrupt request has been acknowledged
-
-
-
-
-
-
-
-
-
-
-
-
 
