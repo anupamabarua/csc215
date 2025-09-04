@@ -108,7 +108,7 @@ JMP
 - Each of these machine language instructions requires a single byte bit pattern to implement the basic instruction
 
 Bit patterns:
-![bit patterns](/Media/bitpatterns "bit patterns") 
+![bit patterns](/Media/bitpatterns/ "bit patterns") 
 
 ## C. Using the Memory
 - Memory Mapping: assigns various types of data to certain blocks of memeory reserved for a spefic purpose
