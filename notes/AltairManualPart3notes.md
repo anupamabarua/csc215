@@ -86,3 +86,52 @@ WO
 INT
 -  an interrupt request has been acknowledged
 
+## B. Loading a sample program
+
+- The program is designed to retrive two numbers from memory and add them together and store the result in memory. Called Mnemonic
+
+LDA
+- Load the accumulator with the contents of a specified memory address
+
+MOV
+- (A→B)–Move the contents of the accumulator into register B
+
+ADD
+- (B+A)–Add the contents of register B to the contents of the accumulator and store the result in the accumulator
+
+STA
+- Store the contents of the accumulator ina specified memory address
+
+JMP
+- Jump to the first step in the program
+
+- Each of these machine language instructions requires a single byte bit pattern to implement the basic instruction
+
+Bit patterns:
+![bit patterns](/Media/bit patterns "bit patterns") 
+
+## C. Using the Memory
+- Memory Mapping: assigns various types of data to certain blocks of memeory reserved for a spefic purpose
+- effectively organizes the avalible memeory into efficient and readily accesible storage medium
+- You can make a new memory map each time tou change the program in the ALTAIR 8800
+
+## D. Memory Addressing
+Direct Addressing
+- instruction supplies the specified mempry address in the form of 2 bytes immediatly following the actual instruction byte
+
+Register Pair Addresssing
+- register pair can contain a memory address
+- H and L registers must be used for this purpose for most insturctions
+- H contains the most significant 8 bits 
+- L contains the least significant 8 bits
+- H is high and L is low
+
+Stack Pointer Addressing
+- PUSH and POP
+- PUSHing data onto the stack causes two bytes (16 bits) of data to be stored in a special block of memory reserved by the programmer and called the stack
+- POPing data from the stack causes this data to be retrieved
+
+## E. Operating Hints
+- lways proof read you programs by resseting the the first memory location of the program and reading though and checking to make sure everything is correct and fixing it if it isnt
+if you need more steps later and you already added some NOP(No OPeration) it is much easier to just add the steps instead of a NOP
+when debuging you can use a single step switch to go though the code step by step and examin the memory
