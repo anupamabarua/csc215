@@ -108,7 +108,7 @@ JMP
 - Each of these machine language instructions requires a single byte bit pattern to implement the basic instruction
 
 Bit patterns:
-![bit patterns](/Media/bit patterns "bit patterns") 
+![bit patterns](/Media/bitpatterns "bit patterns") 
 
 ## C. Using the Memory
 - Memory Mapping: assigns various types of data to certain blocks of memeory reserved for a spefic purpose
@@ -132,6 +132,6 @@ Stack Pointer Addressing
 - POPing data from the stack causes this data to be retrieved
 
 ## E. Operating Hints
-- lways proof read you programs by resseting the the first memory location of the program and reading though and checking to make sure everything is correct and fixing it if it isnt
-if you need more steps later and you already added some NOP(No OPeration) it is much easier to just add the steps instead of a NOP
-when debuging you can use a single step switch to go though the code step by step and examin the memory
+- always proof read you programs by resseting the the first memory location of the program and reading though and checking to make sure everything is correct and fixing it if it isnt
+- if you need more steps later and you already added some NOP(No OPeration) it is much easier to just add the steps instead of a NOP
+- when debuging you can use a single step switch to go though the code step by step and examin the memory
