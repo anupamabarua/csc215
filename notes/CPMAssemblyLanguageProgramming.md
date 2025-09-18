@@ -1,29 +1,9 @@
-Last login: Mon Sep 15 20:36:39 on console
-1003113@1003113-student-FVFG344QQ6L3 ~ % cd projects/csc215
-1003113@1003113-student-FVFG344QQ6L3 csc215 % ls
-Media	notes
-1003113@1003113-student-FVFG344QQ6L3 csc215 % cd notes 
-1003113@1003113-student-FVFG344QQ6L3 notes % ls
-AltairManualPart1notes.md	AltairManualPart3notes.md
-1003113@1003113-student-FVFG344QQ6L3 notes % cp/mPreface+Intro.md
-zsh: no such file or directory: cp/mPreface+Intro.md
-1003113@1003113-student-FVFG344QQ6L3 notes % vi cp/mPreface+Intro.md
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-assembly programmer will be working in a familiar environment.
-
+## Preface
+- Computer programs written in assembly launage can be found in alot of places
+- Not easy to learn
+- Have to study the internal sturcture of the computer
+- New set of instruction for each computer
+- assembly programmer will be working in a familiar environment.
 ## Introduction
 - "cr" symbol represents the pressing the RETURN key
 - Mnemonics "JMP" for jump it makes assembly makes language source code easier to read
