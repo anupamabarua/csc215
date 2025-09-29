@@ -15,8 +15,6 @@ memory location zero
 shadow PROM and executed
 - after the first instruction  the computer hardware is told that it is time to disconnect the shadow PROM, and reinstate RAM at location zero# 🖥️ CPU Bootup & Monitor PROM – Quiz Notes
 
-## 🔁 Reset & Bootup Sequence
-
 1. **Power On or Reset**
    - Can be done by powering on or gently pressing the reset switch.
    - Starts the **reset sequence**.
@@ -72,10 +70,40 @@ Load CP/M system from disk
 If disk error → Error
 ↓
 If no error → Sign on and run CP/M
+```
+## The operating system
+- CPM is the opertating system in the computer
+- originally written on, and for, the Intel MDS-800
+microprocessor development system, it has since been adapted to
+more computers of more different manufacturers than any other operating system
+-  physical port address for console status and data will
+differ from one computer to another
 
+## Customizing CPM
+-  user-to-system conventions built into CP/M 
+-  All disk and I/O accesses are passed through a single entry point into CP/M
+- to implement these function codes are passed in one register, and passed througj a single entry point into CPM
+- implement this, function codes are passed in one register, and the data or buffer address passed in other registers.
+
+## Application programs
+- firmware montiory takes up some space in the main memory address space and the resident portion of CPM will take up 6K
+- Special areas at the bottom of RAM that are used by operating system and the rest of the meory address space is free
+-  8080 family can address 64K, it is not often you find a system with the full 64K of RAM.
+- CPM loads and executes user programs in RAM in the "Transient program area" or TPA
+- Begins at a fixed address and includes all avalible RAM not required by CPM
+- While we are in the process of editing, assembling, and debugging our application programs we will be using CP/M's editor (ED), assembler (ASM), loader (LOAD), and debugger (DDT). These programs are also going to be loaded into the TPA as we use them. Obviously, then, they will not reside in memory all at the same time, and only DDT will share main memory with our programs.
+- DDT will have to be loaded along with our application programs only until the programs are fully operational.
+
+## Special memory areas
+- Vectors are unconditional jump instructions
+- 8080 family uses 8 memory locations as vectors for hardware interrupts
+-  CP/M establishes buffer areas that we will be using when we interface our programs with the operating system
+- TPA begins at the next available location
 
 
 ## Key notes 
-- "Bootstrap" loader was the minium loader that allowed a system to pul
-l intself up into memory by the bootstraps
--
+- "Bootstrap" loader was the minimum loader that allowed a system to pull intself up into memory by the bootstraps
+- CPM is the opertating system in the computer. It manged a computers hardware and files allowing users to run programs from disk drives
+- provided a command-line interface for interacting with the machine and included a file management system
+- CPM loads and executes user programs in RAM in the "Transient program area" or TPA
+- Begins at a fixed address and includes all avalible RAM not required by CPM
