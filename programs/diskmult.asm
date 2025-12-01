@@ -626,7 +626,7 @@ OUTBUF: DS      128
         DS      64              ; 40H LOCATIONS
 STAK:   DB      0               ; TOP OF STACK
 
-SINON:  DB      'FILE MULTIPLIER - NOVEMBER 17, 2025',0
+
 ; BUFFER
 
 BUFFR:  END
