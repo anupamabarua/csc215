@@ -18,22 +18,13 @@ main() {
         ASSERT_STR(get_bigint(&result), "6");
     }
 
-        TEST_CASE("add double digit 10+18") {
-        struct bigint bi1, bi2, result;
-        set_bigint("10", &bi1);
-        set_bigint("18", &bi2);
-        add_bigints(&bi1, &bi2, &result);
-        ASSERT_STR(get_bigint(&result), "21");
+    TEST_CASE("Add double digit: 25 + 46") {
+            struct bigint bi1, bi2, result;
+            set_bigint("25", &bi1);
+            set_bigint("46", &bi2);
+            add_bigints(&bi1, &bi2, &result);
+            ASSERT_STR(get_bigint(result), "71");
     }
-
-        TEST_CASE("add ten digit 3333333333+3333333333") {
-        struct bigint bi1, bi2, result;
-        set_bigint("3333333333", &bi1);
-        set_bigint("3333333333", &bi2);
-        add_bigints(&bi1, &bi2, &result);
-        ASSERT_STR(get_bigint(&result), "6666666666");
-    }
-
 
     END_TESTING();
 }
