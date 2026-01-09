@@ -2,6 +2,9 @@
 #include "BDSCTEST.H"
 
 main() {
+    struct bigint bi;
+    struct bigint bi1, bi2, result;
+    
     START_TESTING("BIGINTTD.C");
 
     TEST_CASE("Read and write bigint 1234567") {
