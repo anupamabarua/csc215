@@ -32,5 +32,12 @@ main()
         add_bigints(&bi1, &bi2, &result);
         ASSERT_STR(get_bigint(&result), "6666666666");
 
+    TEST_CASE("sub: 9 - 4 = 5");
+        set_bigint("9", &bi1);
+        set_bigint("4", &bi2);
+        sub_bigints(&bi1, &bi2, &result);
+        ASSERT_STR(get_bigint(&result), "5");
+
+
     END_TESTING();
 }

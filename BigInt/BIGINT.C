@@ -80,3 +80,38 @@ struct bigint *result;
     result->numdigits -= leading_zeros;
 }
 
+void sub_bigints(num1, num2, result)
+struct bigint *num1;
+struct bigint *num2;
+struct bigint *result;
+{
+    int i;
+    int borrow = 0;
+
+    int digit1, digit2, diff;
+
+    result->negative = 0;
+    result->numdigits = num1->numdigits;
+    result->digits = alloc(result->numdigits);
+
+    for (i = 0; i < num1->numdigits; i++) {
+        digit1 = (num1->digits[i] - '0') - borrow;
+        digit2 = (i < num2->numdigits) ? (num2->digits[i] - '0') : 0;
+
+        if (digit1 < digit2) {
+            digit1 += 10;
+            borrow = 1;
+        } else {
+            borrow = 0;
+        }
+
+        diff = digit1 - digit2;
+        result->digits[i] = diff + '0';
+    }
+
+    while (result->numdigits > 1 &&
+           result->digits[result->numdigits - 1] == '0') {
+        result->numdigits--;
+    }
+}
+
