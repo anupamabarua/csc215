@@ -4,6 +4,7 @@ struct node {
 };
 
 struct node* mknode(n);
+struct node* insertBeforeNode();
 /*
 char* prnlist(struct node* list, char* list_str);
 int lsize(struct node* list);
